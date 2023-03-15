@@ -137,11 +137,13 @@ main{
     margin: 10px;
     background-color: whitesmoke;
     border: solid #086375 3px;
+    height: none;
 }
 
 .icon{
     width: 100px;
     height: 100px;
+    margin: 5px;
 }
 /* #summary, #hobbies, #pastWork{
     max-width: 600px;
