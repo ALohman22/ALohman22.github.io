@@ -15,9 +15,10 @@
             <a class="navA" href="#top">About Me</a>
             <a class="navA" href="#hiddenSkills">Skills</a>
             <a class="navA" href="#hiddenProjects">Projects</a>
-            <a class="navA" href="#contact">Contact</a>
+            <a class="navA" onmouseover="toggleDropdown()">Contact</a>
         </nav>
     </header>
+    <div id="dropContainer"></div>
 
     <main id="main">
         <div id="aboutMeDiv">
@@ -25,25 +26,19 @@
                 <div id="color"></div>  
                 <div id="aboutMe">
                     <div id="summary">
-                        <h2>About Me</h2>
+                        <h2 id="me">About Me</h2>
                         <p>I am a hard working, motivated individulal dedicated to continuous learning. 
                         I've worked blue collar jobs my whole life until I decieded to make the jump to tech.
                         I learned that I love coding and have a nack for it. I pride myself on my work ethic and my ability the quickly learn new skills. </p>
-
-                    <!-- <div id="hobbies">
-                    <h2>Hobbies</h2>
-                    <p>I've always been good with my hands. Some of my favorite hobbies as a kid included prop building,
-                    down hill durby cars, and air canons. Today I still have that love for building. I enjoy wrenching on old trucks, autobody work,
-                    constructing and sourcing firearms, and recently learned how my technical mindset helps me build code and design websites.
-                    </p>
                     </div>
-                    <div id="pastWork">
-                        <h2>Past Jobs</h2>
-                        <p>I have experience just about everything from retail to firefighting and EMT work. I've hd the privilege to work as a lot technition for a car dealership, 
-                        a Firefighter/EMT, and a ballistics lab technition for a bullet manufacturer. I've also held seasonal positions as a retil worker and wildland firefighter.
-                        all the past work had built me into the man I am today.
+
+                    <div id="hobbies">
+                        <h2>Hobbies</h2>
+                        <p>I've always been good with my hands. Some of my favorite hobbies as a kid included prop building,
+                        down hill durby cars, and air canons. Today I still have that love for building. I enjoy wrenching on old trucks, autobody work,
+                        constructing and sourcing firearms, and recently learned how my technical mindset helps me build code and design websites.
                         </p>
-                    </div> -->
+                    </div>
                 </div>
             </section>
             <img id="profile1" src="images/profile1.JPG">
@@ -146,15 +141,7 @@
             </section>
         </div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-
-            <a class="contactLink" href="https://github.com/ALohman22">GitHub</a>
-            <a class="contactLink" href="https://www.linkedin.com/in/andrew-lohman-0079751b0/">LinkedIn</a>
-        </section>
-
-
-        <script src="main.js"></script>
+        <script src="index.js"></script>
 
     </main>   
 </body>
