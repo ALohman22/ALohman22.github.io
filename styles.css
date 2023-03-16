@@ -102,18 +102,35 @@ main{
 
 
 #aboutMeContainer{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     height: 620px;
-    width: calc(100vw - 700px);
+    width: calc(100vw - 500px);
 }
 
 #aboutMe{
     height: 100%;
     display: flex;
     flex-direction: column;
+    grid-column: 1;
+    grid-row: 1;
     /* justify-content: space-between; */
 }
+
+#summary{
+    width: 500px;
+    margin: 30px;
+}
+
+#color{
+    height: 50%;
+    width: 80%;
+    background-color: #DAF0EE;
+    margin: 30px;
+    grid-column: 1;
+    grid-row: 1;
+    border: solid rgb(49, 49, 49) 5px;
+}
+
 #morePhotos{
     display: flex;
     flex-direction: column;
@@ -144,17 +161,6 @@ main{
     width: 100px;
     height: 100px;
     margin: 5px;
-}
-/* #summary, #hobbies, #pastWork{
-    max-width: 600px;
-    border: solid #086375 3px;
-    border-radius: 20px;
-    margin-left: 20px;
-    background-color: #DAF0EE;
-} */
-#slogan{
-    text-align: left;
-    margin-left: 20px;
 }
 
 section{
