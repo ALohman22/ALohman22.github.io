@@ -11,9 +11,10 @@
 
 const toggleDropdown = () => {
     if(document.getElementById('dropMenu')){
-        document.getElementById('dropContainer').innerHTML = ''
-        let dropMenu = document.createElement('div')
-        dropMenu.setAttribute('id', 'dropMenu')
+        let dropContainer = document.getElementById('dropContainer')
+        dropContainer.innerHTML = ''
+        // let dropMenu = document.createElement('div')
+        // dropMenu.setAttribute('id', 'dropMenu')
         // dropMenu.addEventListener("mouseout", dropDownOut)
         // dropMenu.innerHTML = `
         // <a class="contactLink" href="https://github.com/ALohman22">GitHub</a>
@@ -23,7 +24,7 @@ const toggleDropdown = () => {
     } else {
         let dropMenu = document.createElement('div')
         dropMenu.setAttribute('id', 'dropMenu')
-        // dropMenu.addEventListener("mouseout", dropDownOut)
+        dropContainer.addEventListener("mouseleave", dropDownOut)
         dropMenu.innerHTML = `
         <a class="contactLink" href="https://github.com/ALohman22">GitHub</a>
         <a class="contactLink" href="https://www.linkedin.com/in/andrew-lohman-0079751b0/">LinkedIn</a>
@@ -31,8 +32,8 @@ const toggleDropdown = () => {
         document.getElementById('dropContainer').appendChild(dropMenu)
     }
 }
-// const dropMenu = document.getElementById('dropMenu')
-// const dropDownOut = () => {
-//      document.getElementById('dropContainer').innerHTML = ''
-// }
+const dropContainer = document.getElementById('dropContainer')
+const dropDownOut = () => {
+     document.getElementById('dropContainer').innerHTML = ''
+}
 
